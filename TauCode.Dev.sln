@@ -29,11 +29,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Dev", "src\TauCode.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Dev.Tests", "test\TauCode.Dev.Tests\TauCode.Dev.Tests.csproj", "{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tau-lab", "tau-lab", "{6D920C63-CE0B-43A5-8D77-079B8AC7BC91}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Dev.Tests.Exe", "test\TauCode.Dev.Tests.Exe\TauCode.Dev.Tests.Exe.csproj", "{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Utility", "tau-lab\TauCode.Utility\TauCode.Utility.csproj", "{E19C7424-3463-489C-A660-46B92BFB360C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,10 +49,6 @@ Global
 		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E19C7424-3463-489C-A660-46B92BFB360C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E19C7424-3463-489C-A660-46B92BFB360C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E19C7424-3463-489C-A660-46B92BFB360C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E19C7424-3463-489C-A660-46B92BFB360C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,7 +57,6 @@ Global
 		{E9047F0C-60B7-4666-A819-C104D2EB25A6} = {A3502449-1B66-46BE-9466-93D7AFFDD0D6}
 		{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6} = {481234CB-079A-46A4-A857-95EA668661D8}
 		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0} = {481234CB-079A-46A4-A857-95EA668661D8}
-		{E19C7424-3463-489C-A660-46B92BFB360C} = {6D920C63-CE0B-43A5-8D77-079B8AC7BC91}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BF5B427-387F-457F-B613-20C1E70E923A}
