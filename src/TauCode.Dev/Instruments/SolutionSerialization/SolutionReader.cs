@@ -111,7 +111,7 @@ namespace TauCode.Dev.Instruments.SolutionSerialization
                     throw new NotImplementedException();
                 }
             }
-            
+
             foreach (var solutionConfigurationPlatform in _context.SolutionConfigurationPlatforms)
             {
                 solution.AddConfigurationPlatform(solutionConfigurationPlatform);
@@ -295,7 +295,7 @@ namespace TauCode.Dev.Instruments.SolutionSerialization
                 this.CheckNoGlobalYet();
 
                 // todo: ugly & not optimal.
-                var shift = ((IList<string>)_context.FileLines.Skip(_context.Index).ToList()).FindFirstIndexOf("EndProject");
+                var shift = ((IList<string>)_context.FileLines.Skip(_context.Index).ToList()).FindFirstIndex("EndProject");
 
                 if (shift < 0)
                 {
@@ -616,7 +616,7 @@ namespace TauCode.Dev.Instruments.SolutionSerialization
 
             if (match.Success)
             {
-                var shift = ((IList<string>)_context.FileLines.Skip(_context.Index).ToList()).FindFirstIndexOf(x =>
+                var shift = ((IList<string>)_context.FileLines.Skip(_context.Index).ToList()).FindFirstIndex(x =>
                    x.Trim() == "EndGlobalSection");
                 if (shift < 0)
                 {
