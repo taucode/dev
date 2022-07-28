@@ -1,4 +1,4 @@
 ﻿2021-05-19
 ==========
-    1. Deploy to nuget.org.
++   1. Deploy to nuget.org.
 
