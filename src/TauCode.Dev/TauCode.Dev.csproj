@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TauCode.Extensions" Version="1.3.7" />
-    <PackageReference Include="TauCode.Utility" Version="1.3.7" />
+    <PackageReference Include="TauCode.Extensions" Version="1.5.0" />
+    <PackageReference Include="TauCode.Utility" Version="1.5.0" />
   </ItemGroup>
 
 </Project>
