@@ -1,46 +1,43 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
 
-namespace TauCode.Dev.Data.SolutionItems
+namespace TauCode.Dev.Data.SolutionItems;
+
+[DebuggerDisplay("{" + nameof(Name) + "}")]
+public class SolutionProject : PrincipalSolutionItemBase
 {
-    [DebuggerDisplay("{" + nameof(Name) + "}")]
-    public class SolutionProject : PrincipalSolutionItemBase
+    private readonly List<SolutionProjectConfigurationPlatform> _configurationPlatforms;
+
+    public SolutionProject(
+        Guid typeGuid,
+        string name,
+        Guid guid,
+        string localProjectDefinitionFilePath)
+        : base(typeGuid, name, guid)
     {
-        private readonly List<SolutionProjectConfigurationPlatform> _configurationPlatforms;
+        this.LocalProjectDefinitionFilePath =
+            localProjectDefinitionFilePath
+            ??
+            throw new ArgumentNullException(nameof(localProjectDefinitionFilePath));
 
-        public SolutionProject(
-            Guid typeGuid,
-            string name,
-            Guid guid,
-            string localProjectDefinitionFilePath)
-            : base(typeGuid, name, guid)
-        {
-            this.LocalProjectDefinitionFilePath =
-                localProjectDefinitionFilePath
-                ??
-                throw new ArgumentNullException(nameof(localProjectDefinitionFilePath));
+        _configurationPlatforms = new List<SolutionProjectConfigurationPlatform>();
+    }
 
-            _configurationPlatforms = new List<SolutionProjectConfigurationPlatform>();
-        }
+    public Project Project { get; internal set; }
 
-        public Project Project { get; internal set; }
+    public string LocalProjectDefinitionFilePath { get; }
 
-        public string LocalProjectDefinitionFilePath { get; }
+    public IReadOnlyList<SolutionProjectConfigurationPlatform> ConfigurationPlatforms => _configurationPlatforms;
 
-        public IReadOnlyList<SolutionProjectConfigurationPlatform> ConfigurationPlatforms => _configurationPlatforms;
+    public void AddConfigurationPlatform(
+        string name,
+        string suffix,
+        string solutionConfigurationPlatform)
+    {
+        var solutionProjectConfigurationPlatform = new SolutionProjectConfigurationPlatform(
+            name,
+            suffix,
+            solutionConfigurationPlatform);
 
-        public void AddConfigurationPlatform(
-            string name,
-            string suffix,
-            string solutionConfigurationPlatform)
-        {
-            var solutionProjectConfigurationPlatform = new SolutionProjectConfigurationPlatform(
-                name,
-                suffix,
-                solutionConfigurationPlatform);
-
-            _configurationPlatforms.Add(solutionProjectConfigurationPlatform);
-        }
+        _configurationPlatforms.Add(solutionProjectConfigurationPlatform);
     }
 }

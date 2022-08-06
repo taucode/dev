@@ -1,28 +1,26 @@
-﻿using System;
-using TauCode.Dev.Data.SolutionItems;
+﻿using TauCode.Dev.Data.SolutionItems;
 
-namespace TauCode.Dev.Data
+namespace TauCode.Dev.Data;
+
+public abstract class PrincipalSolutionItemBase : IPrincipalSolutionItem
 {
-    public abstract class PrincipalSolutionItemBase : IPrincipalSolutionItem
+    protected PrincipalSolutionItemBase(
+        Guid typeGuid,
+        string name,
+        Guid guid)
     {
-        protected PrincipalSolutionItemBase(
-            Guid typeGuid,
-            string name,
-            Guid guid)
-        {
-            this.TypeGuid = typeGuid; // todo: check
-            this.Name = name ?? throw new ArgumentNullException(nameof(name)); // todo: more checks
-            this.Guid = guid;
-        }
+        this.TypeGuid = typeGuid; // todo: check
+        this.Name = name ?? throw new ArgumentNullException(nameof(name)); // todo: more checks
+        this.Guid = guid;
+    }
 
-        public Guid TypeGuid { get; }
-        public string Name { get; }
-        public Guid Guid { get; }
-        public SolutionFolder ParentSolutionFolder { get; private set; }
+    public Guid TypeGuid { get; }
+    public string Name { get; }
+    public Guid Guid { get; }
+    public SolutionFolder ParentSolutionFolder { get; private set; }
 
-        internal void SetParent(SolutionFolder newParent)
-        {
-            this.ParentSolutionFolder = newParent;
-        }
+    internal void SetParent(SolutionFolder newParent)
+    {
+        this.ParentSolutionFolder = newParent;
     }
 }

@@ -1,16 +1,15 @@
-﻿namespace TauCode.Dev.Data.ProjectItems
+﻿namespace TauCode.Dev.Data.ProjectItems;
+
+public class ProjectReference
 {
-    public class ProjectReference
+    public ProjectReference()
     {
-        public ProjectReference()
-        {   
-        }
-
-        public ProjectReference(string localPath)
-        {
-            this.LocalPath = localPath;
-        }
-
-        public string LocalPath { get; set; }
     }
+
+    public ProjectReference(string localPath)
+    {
+        this.LocalPath = localPath;
+    }
+
+    public string LocalPath { get; set; }
 }
