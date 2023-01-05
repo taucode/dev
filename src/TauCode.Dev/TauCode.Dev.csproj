@@ -11,4 +11,8 @@
     <PackageReference Include="TauCode.Utility" Version="1.5.5-alpha.1.2022-08-12.10-35" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\tau-lab\TauCode.Xml\TauCode.Xml.csproj" />
+  </ItemGroup>
+
 </Project>
