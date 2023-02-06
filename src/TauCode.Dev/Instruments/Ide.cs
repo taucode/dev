@@ -1,7 +1,7 @@
 ﻿using TauCode.Dev.Data;
 using TauCode.Dev.Instruments.ProjectSerialization;
 using TauCode.Dev.Instruments.SolutionSerialization;
-using TauCode.Utility;
+using TauCode.IO;
 
 namespace TauCode.Dev.Instruments;
 
@@ -65,7 +65,7 @@ public class Ide
                 this.Solution.Directory,
                 solutionProject.LocalProjectDefinitionFilePath);
 
-            FileUtility.CreateDirectoryForFile(projectFilePath);
+            FileSystemHelper.CreateDirectoryForFile(projectFilePath);
 
             projectWriter.Write(solutionProject.Project, projectFilePath);
         }
