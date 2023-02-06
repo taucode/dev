@@ -29,14 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Dev", "src\TauCode.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Dev.Tests", "test\TauCode.Dev.Tests\TauCode.Dev.Tests.csproj", "{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Dev.Tests.Exe", "test\TauCode.Dev.Tests.Exe\TauCode.Dev.Tests.Exe.csproj", "{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tau-lab", "tau-lab", "{9DEDB4CA-DA35-4D13-9BFE-D4E7D2645FAE}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test-lab", "test-lab", "{9F4693B6-506D-4EE6-A0C5-C85676E88594}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Xml", "tau-lab\TauCode.Xml\TauCode.Xml.csproj", "{ECDA645A-7453-48B9-8CB0-6CC921CE0F15}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,14 +43,6 @@ Global
 		{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ECDA645A-7453-48B9-8CB0-6CC921CE0F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ECDA645A-7453-48B9-8CB0-6CC921CE0F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ECDA645A-7453-48B9-8CB0-6CC921CE0F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ECDA645A-7453-48B9-8CB0-6CC921CE0F15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -66,8 +50,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{E9047F0C-60B7-4666-A819-C104D2EB25A6} = {A3502449-1B66-46BE-9466-93D7AFFDD0D6}
 		{D58EA7EC-6DE4-4104-8D3F-940ACF19FBD6} = {481234CB-079A-46A4-A857-95EA668661D8}
-		{39B7C869-321E-4DA3-8ECF-0C9974BA87F0} = {481234CB-079A-46A4-A857-95EA668661D8}
-		{ECDA645A-7453-48B9-8CB0-6CC921CE0F15} = {9DEDB4CA-DA35-4D13-9BFE-D4E7D2645FAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4BF5B427-387F-457F-B613-20C1E70E923A}

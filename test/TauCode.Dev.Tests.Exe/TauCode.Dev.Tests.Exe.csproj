@@ -20,8 +20,4 @@
     <PackageReference Include="TauCode.Extensions" Version="1.5.5-alpha.1.2022-08-11.23-27" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\src\TauCode.Dev\TauCode.Dev.csproj" />
-  </ItemGroup>
-
 </Project>

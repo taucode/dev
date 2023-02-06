@@ -7,12 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="TauCode.Extensions" Version="1.5.5-alpha.1.2022-08-11.23-27" />
-    <PackageReference Include="TauCode.Utility" Version="1.5.5-alpha.1.2022-08-12.10-35" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\tau-lab\TauCode.Xml\TauCode.Xml.csproj" />
+    <PackageReference Include="TauCode.Extensions" Version="1.7.0" />
+    <PackageReference Include="TauCode.IO" Version="1.7.0" />
+    <PackageReference Include="TauCode.Xml" Version="1.7.0" />
   </ItemGroup>
 
 </Project>

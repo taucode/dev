@@ -1,12 +1,10 @@
-﻿using TauCode.Xml.Attributes;
-
-namespace TauCode.Dev.Elements;
+﻿namespace TauCode.Dev.Elements;
 
 public class ProjectElement
 {
     public class PropertyGroup
     {
-        [PropertyElement]
+        //[PropertyElement]
         public string? TargetFramework { get; set; }
     }
 
@@ -47,7 +45,7 @@ public class ProjectElement
 
     public class ItemGroup
     {
-        [ElementArray("Compile")]
+        //[ElementArray("Compile")]
         public IList<Compile> CompileCollection { get; set; } = new List<Compile>();
     }
 }
